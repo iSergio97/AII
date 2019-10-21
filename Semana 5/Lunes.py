@@ -6,16 +6,17 @@ from bs4 import BeautifulSoup
 
 root = Tk()
 
+conn = sqlite3.connect("test.db")
+
 # Apartado a
 def apartado_a():
-    conn = sqlite3.connect("test.db")
     conn.execute("DROP TABLE IF EXISTS PRODUCTOS")
     conn.execute('''CREATE TABLE PRODUCTOS(
         MARCA TEXT NOT NULL,
         NOMBRE TEXT NOT NULL,
         LINK TEXT NOT NULL,
-        PRECIO FLOAT NOT NULL,
-        PRECIOOFERTA FLOAT);
+        PRECIOANTIGUO FLOAT NOT NULL,
+        PRECIOFINAL FLOAT);
     ''')
 
     def getElement(text, tag):
@@ -38,20 +39,34 @@ def apartado_a():
             priceSplited = offeredPrice.split()
             priceSplited[0]
             floatPrice = float(priceSplited[0].replace(",", "."))
-            conn.execute("INSERT INTO PRODUCTOS VALUES (?, ?, ?, ?, ?)", (marca, name, href, price, floatPrice))
+            conn.execute("INSERT INTO PRODUCTOS VALUES (?, ?, ?, ?, ?)", (marca, name, href, floatPrice, float(price)))
         else:
-            conn.execute("INSERT INTO PRODUCTOS VALUES (?, ?, ?, ?, ?)", (marca, name, href, price, 'None'))
+            conn.execute("INSERT INTO PRODUCTOS VALUES (?, ?, ?, ?, ?)", (marca, name, href, 'None', float(price)))
 
-    # productos = conn.execute("select * from productos where PRECIOOFERTA != 'None'")
-    # productos
+    # productos = conn.execute("select * from productos where preciofinal")
+
     messagebox.showinfo("OK", "Se ha completado la instrucción de forma correcta")
+
+
+
+
+def apartado_b():
+    marcas = conn.execute("SELECT DISTINCT MARCA from PRODUCTOS ")
+    marcasString= list()
+    for i in marcas:
+        marcasString.append(i[0])
+
+    w = Spinbox(values=marcasString)
+    query = conn.execute("SELECT NOMBRE,PRECIOFINAL FROM PRODUCTOS WHERE MARCA= (?)", (w.get(),))
+    w.pack()
+
 
 
 menubar = Menu(root)
 #Añadimos el botón de almacenar
 menubar.add_command(label="Almacenar", command=apartado_a)
 
-
+menubar.add_command(label="Marcas", command=apartado_b)
 root.config(menu=menubar)
 root.mainloop()
 
