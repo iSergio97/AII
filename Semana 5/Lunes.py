@@ -56,8 +56,15 @@ def apartado_b():
     for i in marcas:
         marcasString.append(i[0])
 
-    w = Spinbox(values=marcasString)
-    query = conn.execute("SELECT NOMBRE,PRECIOFINAL FROM PRODUCTOS WHERE MARCA= (?)", (w.get(),))
+    def queryDB():
+        query = conn.execute("SELECT NOMBRE,PRECIOFINAL FROM PRODUCTOS WHERE MARCA= (?)", (w.get(),))
+        for i in query:
+            print(i)
+
+    # Así se añade un botón a la vista
+    button = Button(root, text="Buscar productos de esa marca", command=queryDB)
+    button.pack(side=RIGHT)
+    w = Spinbox(values=marcasString, state="readonly")
     w.pack()
 
 
