@@ -8,6 +8,7 @@ root = Tk()
 
 conn = sqlite3.connect("test.db")
 
+
 # Apartado a
 def apartado_a():
     conn.execute("DROP TABLE IF EXISTS PRODUCTOS")
@@ -58,10 +59,16 @@ def apartado_b():
 
     def queryDB():
         query = conn.execute("SELECT NOMBRE,PRECIOFINAL FROM PRODUCTOS WHERE MARCA= (?)", (w.get(),))
+        ventana = Toplevel()
+        listbox = Listbox(ventana)
+        listbox
         for i in query:
-            print(i)
+            # Así se añaden varios objetos a una sola línea
+            producto = i[0] + ", " + str(i[1])
+            listbox.insert("end", producto)
+            listbox.insert("end", "")
+        listbox.pack(expand=YES)
 
-    # Así se añade un botón a la vista
     button = Button(root, text="Buscar productos de esa marca", command=queryDB)
     button.pack(side=RIGHT)
     w = Spinbox(values=marcasString, state="readonly")
