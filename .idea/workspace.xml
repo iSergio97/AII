@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35b50b29-9c2e-4e8f-bc5c-412e3e2ba2a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana 4/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/Semana 4/test.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Semana 6/Meneame.py" beforeDir="false" afterPath="$PROJECT_DIR$/Semana 6/Meneame.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Semana 6/meneame.db" beforeDir="false" afterPath="$PROJECT_DIR$/Semana 6/meneame.db" afterDir="false" />
     </list>
@@ -134,15 +133,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Teoría" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Semana 6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Semana 6/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Meneame" />
       <item itemvalue="Python.Lunes" />
       <item itemvalue="Python.Lunes (1)" />
       <item itemvalue="Python.Lunes (2)" />
+      <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Meneame" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.Lunes (2)" />
         <item itemvalue="Python.Lunes (1)" />
         <item itemvalue="Python.Lunes" />
@@ -160,7 +183,8 @@
       <option name="presentableId" value="Default" />
       <updated>1570111700639</updated>
       <workItem from="1570111701935" duration="113000" />
-      <workItem from="1572259309738" duration="8642000" />
+      <workItem from="1572259309738" duration="9459000" />
+      <workItem from="1572270894051" duration="1324000" />
     </task>
     <task id="LOCAL-00001" summary="Principio apartado a">
       <created>1572261439222</created>
@@ -190,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572266440113</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="apartado 1b con menú desplegable">
+      <created>1572268401529</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572268401529</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +232,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -211,11 +244,13 @@
     <MESSAGE value="Principio apartado a" />
     <MESSAGE value="Arreglo apartado a" />
     <MESSAGE value="Apartado a, a hecho" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apartado a, a hecho" />
+    <MESSAGE value="apartado 1b con menú desplegable" />
+    <option name="LAST_COMMIT_MESSAGE" value="apartado 1b con menú desplegable" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Teoría$Test.coverage" NAME="Test Coverage Results" MODIFIED="1572271830426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__2_.coverage" NAME="Lunes (2) Coverage Results" MODIFIED="1572268314117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 2" />
-    <SUITE FILE_PATH="coverage/Teoría$Meneame.coverage" NAME="Meneame Coverage Results" MODIFIED="1572268336964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
+    <SUITE FILE_PATH="coverage/Teoría$Meneame.coverage" NAME="Meneame Coverage Results" MODIFIED="1572272232776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes.coverage" NAME="Lunes Coverage Results" MODIFIED="1572267904858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 4" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__1_.coverage" NAME="Lunes (1) Coverage Results" MODIFIED="1572267914530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 3" />
   </component>

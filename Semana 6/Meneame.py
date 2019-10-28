@@ -71,24 +71,27 @@ def apartado_a():
 
 
 def apartado_1b():
+    messagebox.showinfo("Aviso", "Se han añadido barras de desplazamiento tanto horizontales como verticales, pero se puede navegar empleando los botones 'INICIO' y 'FIN' del teclado y los botones de desplazamiento \n Sólo tiene que hacer click sobre una noticia y desplazarse empleando esos botones. Para navegar con las barras no es necesario realizar nada.")
     noticias = conn.execute("SELECT TITULO, NOMBREAUTOR, FECHAHORA FROM MENEAME ")
     ventana = Toplevel()
 
-    scrollbar = Scrollbar(filemenu)
-    scrollbar.pack(side=BOTTOM, fill=X)
-    scrollbar2 = Scrollbar(filemenu)
-    scrollbar2.pack(side=RIGHT, fill=Y)
+    xScrollBar = Scrollbar(ventana)
+    xScrollBar.pack(side=RIGHT, fill=Y)
 
-    listbox = Listbox(ventana, width=100, yscrollcommand= scrollbar2.set, xscrollcommand = scrollbar.set)
+    yScrollBar = Scrollbar(ventana)
+    yScrollBar.pack(side=BOTTOM, fill=X)
+
+    listbox = Listbox(ventana, width=100)
 
     for i in noticias:
         # Así se añaden varios objetos a una sola línea
-        noti = i[0] + ", " + i[1] + "," + str(i[2])
+        noti = i[0] + ", " + i[1] + ", " + str(i[2])
         listbox.insert("end", noti)
         listbox.insert("end", "")
-    listbox.pack(side = LEFT, fill = BOTH)
-    scrollbar.config(command= listbox.xview)
-    scrollbar2.config(command=listbox.yview)
+
+    listbox.pack(side=LEFT, fill=BOTH)
+    xScrollBar.config(command = listbox.yview)
+    yScrollBar.config(command=listbox.xview)
 
 
 
