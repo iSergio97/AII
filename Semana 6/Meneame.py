@@ -69,9 +69,27 @@ def apartado_a():
 
     messagebox.showinfo("OK", "Se han almacenado " + str(len(listfh)) + " noticias")
 
+
+def apartado_1b():
+    noticias = conn.execute("SELECT TITULO, NOMBREAUTOR, FECHAHORA FROM MENEAME ")
+    ventana = Toplevel()
+    listbox = Listbox(ventana, width=100)
+    listbox
+    for i in noticias:
+        # Así se añaden varios objetos a una sola línea
+        noti = i[0] + ", " + i[1] + "," + str(i[2])
+        listbox.insert("end", noti)
+        listbox.insert("end", "")
+    listbox.pack(expand=YES)
+
+
+
 menubar = Menu(root)
 #Añadimos el botón de almacenar
 menubar.add_command(label="Almacenar", command=apartado_a)
+menubar.add_command(label="Mostrar", command=apartado_1b())
 
 root.config(menu=menubar)
 root.mainloop()
+
+
