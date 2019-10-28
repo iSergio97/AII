@@ -26,15 +26,18 @@ def apartado_a():
 
     def getElement(text, tag, clase):
         soup = BeautifulSoup(text, "html.parser")
-        return soup.find_all(tag, class_=[clase])
+        return soup.find_all(tag, class_=clase)
 
-    for i in range(1, 4, 1):
-        url = "https://www.meneame.net/?page=" + str(i)
+    for i in range(3):
+        url = "https://www.meneame.net/?page=" + str(i+1)
         read = urllib.request.urlopen(url)
         center = getElement(read, "div", "center-content")
-        for j in range(center):
-            a = j.find("a")
-            link = a['href']
-            print(link)
+        for j in center:
+            a = j.find("h2").find("a")
+            print(a)
+
+
+
+
 
 print(apartado_a())
