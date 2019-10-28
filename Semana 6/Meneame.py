@@ -75,6 +75,7 @@ def apartado_1b():
     ventana = Toplevel()
     listbox = Listbox(ventana, width=100)
     listbox
+
     for i in noticias:
         # Así se añaden varios objetos a una sola línea
         noti = i[0] + ", " + i[1] + "," + str(i[2])
@@ -86,9 +87,13 @@ def apartado_1b():
 
 menubar = Menu(root)
 #Añadimos el botón de almacenar
-menubar.add_command(label="Almacenar", command=apartado_a)
-menubar.add_command(label="Mostrar", command=apartado_1b())
+filemenu = Menu(menubar, tearoff=0)
+filemenu.add_command(label="Almacenar", command=apartado_a)
+filemenu.add_separator()
+filemenu.add_command(label="Mostrar", command=apartado_1b())
 
+
+menubar.add_cascade(label="Datos", menu=filemenu)
 root.config(menu=menubar)
 root.mainloop()
 
