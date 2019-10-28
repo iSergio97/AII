@@ -60,7 +60,7 @@ def apartado_b():
     def queryDB():
         query = conn.execute("SELECT NOMBRE,PRECIOFINAL FROM PRODUCTOS WHERE MARCA= (?)", (w.get(),))
         ventana = Toplevel()
-        listbox = Listbox(ventana)
+        listbox = Listbox(ventana, width=100)
         listbox
         for i in query:
             # Así se añaden varios objetos a una sola línea
