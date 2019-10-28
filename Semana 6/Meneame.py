@@ -73,24 +73,34 @@ def apartado_a():
 def apartado_1b():
     noticias = conn.execute("SELECT TITULO, NOMBREAUTOR, FECHAHORA FROM MENEAME ")
     ventana = Toplevel()
-    listbox = Listbox(ventana, width=100)
-    listbox
+
+    scrollbar = Scrollbar(filemenu)
+    scrollbar.pack(side=BOTTOM, fill=X)
+    scrollbar2 = Scrollbar(filemenu)
+    scrollbar2.pack(side=RIGHT, fill=Y)
+
+    listbox = Listbox(ventana, width=100, yscrollcommand= scrollbar2.set, xscrollcommand = scrollbar.set)
 
     for i in noticias:
         # Así se añaden varios objetos a una sola línea
         noti = i[0] + ", " + i[1] + "," + str(i[2])
         listbox.insert("end", noti)
         listbox.insert("end", "")
-    listbox.pack(expand=YES)
+    listbox.pack(side = LEFT, fill = BOTH)
+    scrollbar.config(command= listbox.xview)
+    scrollbar2.config(command=listbox.yview)
 
 
 
 menubar = Menu(root)
+
 #Añadimos el botón de almacenar
 filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="Almacenar", command=apartado_a)
 filemenu.add_separator()
-filemenu.add_command(label="Mostrar", command=apartado_1b())
+filemenu.add_command(label="Mostrar", command=apartado_1b)
+
+
 
 
 menubar.add_cascade(label="Datos", menu=filemenu)
