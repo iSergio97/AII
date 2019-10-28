@@ -3,6 +3,7 @@ from tkinter import  messagebox
 import sqlite3
 import urllib.request
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 root = Tk()
 
@@ -19,8 +20,8 @@ def apartado_a():
     TITULO TEXT NOT NULL,
     ENLACE TEXT NOT NULL,
     NOMBREAUTOR TEXT NOT NULL,
-    FECHAHORA TEXT NOT NULL,
-    CONTENIDO TEXT NOT NULL
+    FECHAHORA DATETIME NOT NULL,
+    CONTENIDO TEXT
     );
     ''')
 
@@ -28,16 +29,49 @@ def apartado_a():
         soup = BeautifulSoup(text, "html.parser")
         return soup.find_all(tag, class_=clase)
 
+    listContenido = list()
+    listAuthor = list()
+    listfh = list()
+    listTitle = list()
+    listHref = list()
+
     for i in range(3):
         url = "https://www.meneame.net/?page=" + str(i+1)
         read = urllib.request.urlopen(url)
         center = getElement(read, "div", "center-content")
         for j in center:
             a = j.find("h2").find("a")
-            print(a)
+            href = a["href"]
+            title = a.string
+            listTitle.append(title)
+            listHref.append(href)
+            tagAutor = getElement(str(j), "div", ['news-submitted'])
+            contenido = getElement(str(j), "div", ["news-content"])
+            for h in contenido:
+                listContenido.append(h.string)
+            for k in tagAutor:
+                authorA = k.find("a")
+                autor = authorA['href'].replace("/user/", "")
+                listAuthor.append(autor)
+                span = getElement(str(k), "span", ["ts visible"])
+                data_ts = span[0]['data-ts']
+                fechahora = datetime.fromtimestamp(int(data_ts))
+                listfh.append(fechahora)
 
+    for i in range(len(listAuthor)):
+        titulo = listTitle[i]
+        link = listHref[i]
+        autor = listAuthor[i]
+        fechayhora = listfh[i]
+        contenidoArt = listContenido[i]
+        conn.execute("INSERT INTO MENEAME VALUES (?,?,?,?,?)",
+                     (titulo, link, autor, fechayhora, contenidoArt))
 
+    messagebox.showinfo("OK", "Se han almacenado " + str(len(listfh)) + " noticias")
 
+menubar = Menu(root)
+#Añadimos el botón de almacenar
+menubar.add_command(label="Almacenar", command=apartado_a)
 
-
-print(apartado_a())
+root.config(menu=menubar)
+root.mainloop()
