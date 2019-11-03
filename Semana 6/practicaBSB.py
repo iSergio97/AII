@@ -58,9 +58,3 @@ def apartado_a():
                 for l in h3:
                     a = l.find("a")
                     listTitle.append(a.string)
-
-
-
-
-
-print(apartado_a())
