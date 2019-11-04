@@ -124,7 +124,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Semana 7\Lunes\Lunes.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Semana 7\Lunes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -286,7 +286,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Teoría$Test.coverage" NAME="Test Coverage Results" MODIFIED="1572271830426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__2_.coverage" NAME="Lunes (2) Coverage Results" MODIFIED="1572268314117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 2" />
-    <SUITE FILE_PATH="coverage/Teoría$Lunes__3_.coverage" NAME="Lunes (3) Coverage Results" MODIFIED="1572899336820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 7" />
+    <SUITE FILE_PATH="coverage/Teoría$Lunes__3_.coverage" NAME="Lunes (3) Coverage Results" MODIFIED="1572899428368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 7" />
     <SUITE FILE_PATH="coverage/Teoría$Meneame.coverage" NAME="Meneame Coverage Results" MODIFIED="1572894266336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes.coverage" NAME="Lunes Coverage Results" MODIFIED="1572267904858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 4" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__1_.coverage" NAME="Lunes (1) Coverage Results" MODIFIED="1572267914530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 3" />
