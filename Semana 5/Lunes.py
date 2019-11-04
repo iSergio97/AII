@@ -38,7 +38,6 @@ def apartado_a():
         if offeredPrice != None:
             offeredPrice = offeredPrice.string
             priceSplited = offeredPrice.split()
-            priceSplited[0]
             floatPrice = float(priceSplited[0].replace(",", "."))
             conn.execute("INSERT INTO PRODUCTOS VALUES (?, ?, ?, ?, ?)", (marca, name, href, floatPrice, float(price)))
         else:
