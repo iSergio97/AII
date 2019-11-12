@@ -19,6 +19,9 @@ def apartado_a(dirdocs, dirindex):
     ix = create_in(dirindex, schema=get_schema())
     writer = ix.writer()
     i = 0
+    # En el caso del lunes de la semana 8, tenemos dos opciones, o vamos almacenando en el directorio las noticias, o las
+    # voy almacenando en una lista y luego la recorro de esta forma
+    # La mejor solución es ir tratando el objeto tras obtenerlo y no añadirlo a una lista.
     for docname in os.listdir(dirdocs):
         if not os.path.isdir(dirdocs + docname):
             add_doc(writer, dirdocs, docname)

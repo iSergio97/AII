@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b50b29-9c2e-4e8f-bc5c-412e3e2ba2a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Index/MAIN_0a2093yrqhl8wtur.seg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Index/_MAIN_1.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Whoosh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Whoosh2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semana 8/Noticias.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semana 8/index/_MAIN_0.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repaso whoosh/whoosh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repaso whoosh/Index/MAIN_WRITELOCK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repaso whoosh/Index/MAIN_0a2093yrqhl8wtur.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repaso whoosh/Index/_MAIN_1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Repaso whoosh/Index/_MAIN_1.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repaso whoosh/Whoosh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repaso whoosh/Whoosh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semana 8/Lunes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Semana 8/Lunes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -57,8 +61,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Whoosh (1)">
-    <configuration name="Lunes (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Lunes">
+    <configuration name="Lunes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Teoría" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,12 +70,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Semana 7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Semana 8" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Semana 7\Lunes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Semana 8/Lunes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,20 +84,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Meneame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Teoría" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Semana 6" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Repaso whoosh" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Semana 6/Meneame.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Repaso whoosh/Parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +150,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Woosh" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Whoosh2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Teoría" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,12 +158,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ejercicios de Woosh 1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Repaso whoosh" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Ejercicios de Woosh 1\Whoosh.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Repaso whoosh/Whoosh2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,19 +173,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Meneame" />
-      <item itemvalue="Python.Lunes (3)" />
-      <item itemvalue="Python.Woosh" />
-      <item itemvalue="Python.Whoosh" />
+      <item itemvalue="Python.Parser" />
       <item itemvalue="Python.Whoosh (1)" />
+      <item itemvalue="Python.Whoosh" />
+      <item itemvalue="Python.Lunes" />
+      <item itemvalue="Python.Whoosh2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Lunes" />
+        <item itemvalue="Python.Whoosh2" />
         <item itemvalue="Python.Whoosh (1)" />
+        <item itemvalue="Python.Parser" />
         <item itemvalue="Python.Whoosh" />
-        <item itemvalue="Python.Woosh" />
-        <item itemvalue="Python.Lunes (3)" />
-        <item itemvalue="Python.Meneame" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +208,10 @@
       <workItem from="1572892739885" duration="1836000" />
       <workItem from="1572894606691" duration="4849000" />
       <workItem from="1573395743151" duration="1113000" />
+      <workItem from="1573497856520" duration="145000" />
+      <workItem from="1573498015236" duration="4705000" />
+      <workItem from="1573577128611" duration="182000" />
+      <workItem from="1573577436428" duration="5370000" />
     </task>
     <task id="LOCAL-00001" summary="Principio apartado a">
       <created>1572261439222</created>
@@ -302,11 +310,13 @@
     <SUITE FILE_PATH="coverage/Teoría$Test.coverage" NAME="Test Coverage Results" MODIFIED="1572271830426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__2_.coverage" NAME="Lunes (2) Coverage Results" MODIFIED="1572268314117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 2" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__3_.coverage" NAME="Lunes (3) Coverage Results" MODIFIED="1572899428368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 7" />
+    <SUITE FILE_PATH="coverage/Teoría$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1573578700146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
     <SUITE FILE_PATH="coverage/Teoría$Meneame.coverage" NAME="Meneame Coverage Results" MODIFIED="1572894266336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
-    <SUITE FILE_PATH="coverage/Teoría$Whoosh__1_.coverage" NAME="Whoosh (1) Coverage Results" MODIFIED="1573396512284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
+    <SUITE FILE_PATH="coverage/Teoría$Whoosh__1_.coverage" NAME="Whoosh (1) Coverage Results" MODIFIED="1573580182469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
+    <SUITE FILE_PATH="coverage/Teoría$Whoosh2.coverage" NAME="Whoosh2 Coverage Results" MODIFIED="1573581162110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
     <SUITE FILE_PATH="coverage/Teoría$Woosh.coverage" NAME="Woosh Coverage Results" MODIFIED="1573395990184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ejercicios de Woosh 1" />
-    <SUITE FILE_PATH="coverage/Teoría$Lunes.coverage" NAME="Lunes Coverage Results" MODIFIED="1572267904858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 4" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__1_.coverage" NAME="Lunes (1) Coverage Results" MODIFIED="1572267914530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 3" />
+    <SUITE FILE_PATH="coverage/Teoría$Lunes.coverage" NAME="Lunes Coverage Results" MODIFIED="1573582814445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 8" />
     <SUITE FILE_PATH="coverage/Teoría$Whoosh.coverage" NAME="Whoosh Coverage Results" MODIFIED="1573396080073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ejercicios de Whoosh 1" />
   </component>
 </project>
