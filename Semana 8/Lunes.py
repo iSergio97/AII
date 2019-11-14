@@ -1,19 +1,15 @@
+# encoding:utf-8
+import os
 import urllib.request
 from datetime import *
 from tkinter import *
 from tkinter import messagebox
-
 import dateparser
 # sys.path.append("Noticias")
 from Noticias import *
 from bs4 import BeautifulSoup
-from whoosh.fields import Schema, TEXT, DATETIME
+from whoosh.fields import Schema, TEXT, DATETIME, ID
 from whoosh.index import create_in
-import os
-import sys
-
-root = Tk()
-noticias = list()
 
 
 def getElement(text, tag, clase):
@@ -27,17 +23,18 @@ def getElementNoClass(text, tag):
 
 
 def get_schema():
-    return Schema(titulo=TEXT, link=TEXT,
-                  categoria=TEXT, fecha=DATETIME,
-                  descripcion=TEXT)
+    return Schema(title=TEXT(stored=True), href=ID(stored=True),
+                  category=TEXT(stored=True), date=DATETIME(stored=True),
+                  description=TEXT(stored=True))
 
 
 def apartado_a(dirname):
-
     if not os.path.exists(dirname):
         os.mkdir(dirname)
 
     ix = create_in(dirname, schema=get_schema())
+
+    writer = ix.writer()
 
     for i in range(3):
         read = urllib.request.urlopen("http://www.sensacine.com/noticias/?page=" + str(i))
@@ -59,27 +56,43 @@ def apartado_a(dirname):
                     categoria = getElement(str(k), "div", "meta-category")[0].string[10:]
                     fechita = getElement(str(k), "div", "meta-date")[0].string
                     descripcion = getElement(str(k), "div", "meta-body")
-                    fecha = str(dateparser.parse(fechita))[:10]
-                    format = datetime.strptime(fecha, '%Y-%m-%d')
                     if (len(descripcion) == 0):
                         descripcion = ""
-                    noticia = Noticias(titulo, link, categoria, format, descripcion)
-                    noticias.append(noticia)
-    messagebox.showinfo("Fin de carga", "Se han cargado " + str(len(noticias)) + " noticias")
+                    else:
+                        descripcion = descripcion[0].string
+
+                    fecha = str(dateparser.parse(fechita))[:10]
+                    format = datetime.strptime(fecha, '%Y-%m-%d')
+                    writer.add_document(title=titulo, href=link, category=categoria, date=format, description=descripcion)
+    writer.commit()
+    messagebox.showinfo("Fin de carga", "Se han cargado " + str(i+1) + " páginas")
     # TODO completar apartado A con Whoosh
 
 
 def ventana_principal():
     dirIndex = "index"
-    cargar = Button(root, text="Cargar noticias", command=lambda: apartado_a("index"))
-    cargar.pack(side=TOP)
-    finderTitleDesc = Button(root, text="Buscar por título y descripción")
-    finderTitleDesc.pack(side=TOP)
-    finderDescrip = Button(root, text="Buscar por y descripción")
-    finderDescrip.pack(side=TOP)
-    finderDate = Button(root, text="Buscar fecha")
-    finderDate.pack(side=TOP)
+    root = Tk()
+    menubar = Menu(root)
+    # TKinter, parte del desplegable de indexar
+    cargarMenu = Menu(menubar, tearoff=0)
+    cargarMenu.add_command(label="Cargar noticias", command=lambda: apartado_a(dirIndex))
+    cargarMenu.add_separator()
+    cargarMenu.add_command(label="Salir", command=root.quit)
+    menubar.add_cascade(label="Indexar", menu=cargarMenu)
+
+    #TKinter, parte del menu de finder
+    finderMenu = Menu(menubar, tearoff=0)
+    finderMenu.add_command(label="Buscar por título y descripción", command=doNothing)
+    finderMenu.add_command(label="Buscar por descripción", command=doNothing)
+    finderMenu.add_command(label="Buscar por fecha", command=doNothing)
+    menubar.add_cascade(label="Buscar noticias", menu=finderMenu)
+
+    root.config(menu=menubar)
     root.mainloop()
+
+
+def doNothing():
+    messagebox.showinfo("Nothing", "Do nothing!")
 
 if __name__ == '__main__':
     ventana_principal()
