@@ -28,7 +28,7 @@ def get_schema():
                   description=TEXT(stored=True))
 
 
-def apartado_a(dirname):
+def indexar(dirname):
     if not os.path.exists(dirname):
         os.mkdir(dirname)
 
@@ -66,7 +66,6 @@ def apartado_a(dirname):
                     writer.add_document(title=titulo, href=link, category=categoria, date=format, description=descripcion)
     writer.commit()
     messagebox.showinfo("Fin de carga", "Se han cargado " + str(i+1) + " páginas")
-    # TODO completar apartado A con Whoosh
 
 
 def ventana_principal():
@@ -75,14 +74,14 @@ def ventana_principal():
     menubar = Menu(root)
     # TKinter, parte del desplegable de indexar
     cargarMenu = Menu(menubar, tearoff=0)
-    cargarMenu.add_command(label="Cargar noticias", command=lambda: apartado_a(dirIndex))
+    cargarMenu.add_command(label="Cargar noticias", command=lambda: indexar(dirIndex))
     cargarMenu.add_separator()
     cargarMenu.add_command(label="Salir", command=root.quit)
     menubar.add_cascade(label="Indexar", menu=cargarMenu)
 
     #TKinter, parte del menu de finder
     finderMenu = Menu(menubar, tearoff=0)
-    finderMenu.add_command(label="Buscar por título y descripción", command=doNothing)
+    finderMenu.add_command(label="Buscar por título y descripción", command=lambda: finderTitleAndDescrip(dirIndex))
     finderMenu.add_command(label="Buscar por descripción", command=doNothing)
     finderMenu.add_command(label="Buscar por fecha", command=doNothing)
     menubar.add_cascade(label="Buscar noticias", menu=finderMenu)
@@ -93,6 +92,27 @@ def ventana_principal():
 
 def doNothing():
     messagebox.showinfo("Nothing", "Do nothing!")
+
+
+def finderTitleAndDescrip(dirIndex):
+    def mostrar_noticias(event):
+        messagebox.showinfo("Nothing", "Do nothing!")
+
+
+    tLevel = Toplevel()
+    tLevel.title("Buscar por título y descripción")
+    frame = Frame(tLevel)
+    frame.pack(side=TOP)
+    label = Label(frame, text="Introduzca una palabra para buscar: ")
+    label.pack(side=LEFT)
+    entry = Entry(frame)
+    entry.bind("<Return>", mostrar_noticias)
+    entry.pack(side=LEFT)
+    sb = Scrollbar(tLevel)
+    sb.pack(side=RIGHT, fill=Y)
+    lb = Listbox(tLevel, yscrollcommand=sb.set)
+    lb.pack(side=BOTTOM, fill=BOTH)
+    sb.config(command=lb.yview)
 
 if __name__ == '__main__':
     ventana_principal()
