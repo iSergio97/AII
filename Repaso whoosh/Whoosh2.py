@@ -46,6 +46,7 @@ def apartado_b(dirindex):
     ix = open_dir(dirindex)
     try:
         with ix.searcher() as searcher:
+            # En el QueryParser, el primer elemento indica el campo del schema que queremos tratar como query
             query = QueryParser("fecha", ix.schema).parse(myquery)
             results = searcher.search(query)
             for r in results:
@@ -73,7 +74,7 @@ def get_schema():
 
 def add_doc(writer, path, docname):
     try:
-        fileobj = open(path + '\\' + docname, "r")
+        fileobj = open(path + '//' + docname, "r")
         rte = fileobj.readline().strip()
         dtos = fileobj.readline().strip()
         f = fileobj.readline().strip()
@@ -97,6 +98,7 @@ def crea_agenda(dirage):
         email = fileobj.readline()
         while email:
             nombre = fileobj.readline()
+            print(nombre)
             dic[email.strip()] = nombre.strip()
             email = fileobj.readline()
 
@@ -107,7 +109,7 @@ def crea_agenda(dirage):
 
 
 def main():
-    crea_index("Correos", "Index")
+    crea_index("Correos1", "Index")
     agenda = crea_agenda("Agenda")
     apartado_a("Index", agenda)
     apartado_b("Index")

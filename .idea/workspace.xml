@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b50b29-9c2e-4e8f-bc5c-412e3e2ba2a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Index/MAIN_yiiby1m5vnp4ls1v.seg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semana 8/index/MAIN_yfyi4vlyt2bdbbpo.seg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Semana 9/Lunes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Agenda/agenda.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Correos1/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Correos1/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Correos1/3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Correos1/4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Correos1/5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Correos1/6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Repaso whoosh/Index/MAIN_zcguvvidkj09mae3.seg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semana 9/Index/MAIN_88o6w6i3fkiu11jv.seg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semana 9/Index/MAIN_WRITELOCK" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semana 9/Index/_MAIN_1.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Semana 9/practicaWHB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repaso whoosh/Index/MAIN_yiiby1m5vnp4ls1v.seg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Repaso whoosh/Index/_MAIN_1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Repaso whoosh/Index/_MAIN_1.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Repaso whoosh/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repaso whoosh/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana 8/Lunes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Semana 8/Lunes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana 8/index/MAIN_z218ym5bs5ur0ra3.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Semana 8/index/_MAIN_1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/Semana 8/index/_MAIN_1.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repaso whoosh/Whoosh2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Repaso whoosh/Whoosh2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semana 9/Lunes.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Repaso whoosh\Correos1" />
       <recent name="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Repaso whoosh" />
       <recent name="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Semana 7" />
       <recent name="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Semana 7\Lunes" />
@@ -61,29 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Parser">
-    <configuration name="Lunes (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Teoría" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Semana 7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Semana 7/Lunes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Lunes (2)">
     <configuration name="Lunes (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Teoría" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +85,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Semana 9/Lunes.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\stb_1\OneDrive\Escritorio\WorkSpaces\AII\Teoría\Semana 9\practicaWHB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,20 +160,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Whoosh2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Teoría" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Repaso whoosh" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Repaso whoosh/Whoosh2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Whoosh (1)" />
       <item itemvalue="Python.Lunes" />
-      <item itemvalue="Python.Lunes (1)" />
       <item itemvalue="Python.Lunes (2)" />
       <item itemvalue="Python.Parser" />
+      <item itemvalue="Python.Whoosh2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Parser" />
         <item itemvalue="Python.Lunes (2)" />
-        <item itemvalue="Python.Lunes" />
+        <item itemvalue="Python.Parser" />
+        <item itemvalue="Python.Whoosh2" />
         <item itemvalue="Python.Whoosh (1)" />
-        <item itemvalue="Python.Lunes (1)" />
+        <item itemvalue="Python.Lunes" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +225,15 @@
       <workItem from="1573638807578" duration="2646000" />
       <workItem from="1573641483863" duration="76000" />
       <workItem from="1573729187968" duration="6714000" />
-      <workItem from="1573902454060" duration="2290000" />
+      <workItem from="1573902454060" duration="3512000" />
+      <workItem from="1574007470676" duration="2235000" />
+      <workItem from="1574087889727" duration="40000" />
+      <workItem from="1574088070036" duration="807000" />
+      <workItem from="1574094453232" duration="73000" />
+      <workItem from="1574095855387" duration="647000" />
+      <workItem from="1574096660792" duration="268000" />
+      <workItem from="1574102465361" duration="6659000" />
+      <workItem from="1574182302866" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="Principio apartado a">
       <created>1572261439222</created>
@@ -294,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573731772373</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Plantilla para el examen del lunes de Whoosh preparada.">
+      <created>1573904789732</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573904789732</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,9 +349,24 @@
     <MESSAGE value="Apartado a lunes 7 corregido" />
     <MESSAGE value="Semana 8/Lunes.py&#10;&#10;Se ha intentado añadir la parte de Whoosh. No se ha conseguido, pero se han añadido indicaciones para realizar las consultas a Whoosh en el documento de Whoosh1 y Whoosh2 en la carpeta de whoosh" />
     <MESSAGE value="Semana 8/Lunes.py&#10;&#10;Añadido menú de TKinter y el apartado de cargar y salir completo. Faltan hacer las queries para buscar las noticias." />
-    <option name="LAST_COMMIT_MESSAGE" value="Semana 8/Lunes.py&#10;&#10;Añadido menú de TKinter y el apartado de cargar y salir completo. Faltan hacer las queries para buscar las noticias." />
+    <MESSAGE value="Plantilla para el examen del lunes de Whoosh preparada." />
+    <option name="LAST_COMMIT_MESSAGE" value="Plantilla para el examen del lunes de Whoosh preparada." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Repaso whoosh/Whoosh2.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Repaso whoosh/Whoosh2.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="a" />
@@ -336,11 +376,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Teoría$Test.coverage" NAME="Test Coverage Results" MODIFIED="1572271830426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__3_.coverage" NAME="Lunes (3) Coverage Results" MODIFIED="1572899428368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 7" />
-    <SUITE FILE_PATH="coverage/Teoría$Lunes__2_.coverage" NAME="Lunes (2) Coverage Results" MODIFIED="1573903764804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 9" />
-    <SUITE FILE_PATH="coverage/Teoría$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1573904332172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
+    <SUITE FILE_PATH="coverage/Teoría$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1574105970499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
+    <SUITE FILE_PATH="coverage/Teoría$Lunes__2_.coverage" NAME="Lunes (2) Coverage Results" MODIFIED="1574108932481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 9" />
     <SUITE FILE_PATH="coverage/Teoría$Meneame.coverage" NAME="Meneame Coverage Results" MODIFIED="1572894266336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 6" />
-    <SUITE FILE_PATH="coverage/Teoría$Whoosh__1_.coverage" NAME="Whoosh (1) Coverage Results" MODIFIED="1573732555737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
-    <SUITE FILE_PATH="coverage/Teoría$Whoosh2.coverage" NAME="Whoosh2 Coverage Results" MODIFIED="1573581162110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
+    <SUITE FILE_PATH="coverage/Teoría$Whoosh__1_.coverage" NAME="Whoosh (1) Coverage Results" MODIFIED="1574008930971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
+    <SUITE FILE_PATH="coverage/Teoría$Whoosh2.coverage" NAME="Whoosh2 Coverage Results" MODIFIED="1574088873841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Repaso whoosh" />
     <SUITE FILE_PATH="coverage/Teoría$Woosh.coverage" NAME="Woosh Coverage Results" MODIFIED="1573395990184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ejercicios de Woosh 1" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes__1_.coverage" NAME="Lunes (1) Coverage Results" MODIFIED="1573729307890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 7" />
     <SUITE FILE_PATH="coverage/Teoría$Lunes.coverage" NAME="Lunes Coverage Results" MODIFIED="1573734577838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Semana 8" />

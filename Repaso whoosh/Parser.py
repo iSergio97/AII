@@ -1,6 +1,11 @@
+from datetime import datetime
 import dateparser
-fecha = dateparser.parse("lunes, 1 de noviembre de 2019")
-print(str(fecha)[:10])
 
-for i in range (3):
-    print("http://www.sensacine.com/noticias/?page=" + str(i))
+date = "10 de Feb de 1997"
+parsed = dateparser.parse(date)
+print(parsed)
+
+si = "Esto es una prueba de si"
+no = "ESto es una prueba de not"
+o = "Esto es una prueba de o"
+
